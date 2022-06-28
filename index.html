@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>4択クイズ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js"></script>
+  </head>
+  <body onload="set();DefaultSave();">
+
+    <!--白い枠の領域-->
+    <div class="white-box">
+      <!--問題番号を表示する領域-->
+　　　　<div class="order" id="order"></div>
+        <button type="button" id="reset" onClick="reset"></button>
+
+      <!--問題を表示する領域-->
+      <div class="question" id="question"></div>
+
+      <!--選択肢を表示する領域-->
+      <div class="answer">
+       <button type="button" id="answer1" onClick="judge(1);"></button>
+       <button type="button" id="answer2" onClick="judge(2);"></button>
+       <button type="button" id="answer3" onClick="judge(3);"></button> 
+       <button type="button" id="answer4" onClick="judge(4);"></button>
+      </div>
+      
+      <!--正誤判定を表示する領域-->
+      <div class="result" id="result"></div>
+    </div>
+  </body>
+  
+</html>
